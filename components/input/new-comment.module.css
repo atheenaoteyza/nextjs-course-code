@@ -1,10 +1,13 @@
 .form {
+  display: flex;
+  flex-direction: column;
   margin: 2rem auto;
   width: 100%;
   border-radius: 6px;
   background-color: #03be9f;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  padding: 2rem;
+  padding-bottom: 3rem; /* Increase padding at the bottom */
 }
 
 .row {
@@ -38,5 +41,17 @@
 }
 
 .form button {
-  background-color: white;
+  background-color: white !important;
+  display: block; /* Ensures the button takes full width if needed */
+  width: 100%; /* Optional: Makes it full width */
+  padding: 0.5rem 1rem;
+  margin-top: 1rem; /* Ensures spacing from the last input */
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #f0f0f0;
 }
